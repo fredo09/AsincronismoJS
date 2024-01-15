@@ -1,0 +1,17 @@
+{
+  "name": "te-lo-prometo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon node ./index.js",
+    "call": "nodemon node ./callback.js",
+    "call2": "nodemon node ./callback2.js",
+    "pro": "nodemon node ./promesas.js",
+    "async-await": "nodemon node ./async-await.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
