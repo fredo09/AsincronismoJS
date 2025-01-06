@@ -49,8 +49,8 @@ let getInformacion = async (id) => {
 
 getInformacion(2)
   .then((mensaje) => {
-    console.log(mensaje);
+    console.log("🚀 ~ .then ~ mensaje:", mensaje);
   })
   .catch((error) => {
-    console.log("error :", error);
+    console.log("🚀 ~ error:", error);
   });
