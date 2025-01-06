@@ -27,15 +27,15 @@ let getEmpleado = (id, callback) => {
   // Buscamos el empleado por su id
   let empleadoDB = empleados.find((empleado) => empleado.id === id);
   if (!empleadoDB) {
-    // Si el empleado no existe, entonces el primer argumento de
-    // callback será un mensaje de error, y como segundo parametro
-    // no tendrá nada, pues no se encontró el empleado
+    /*Si el empleado no existe, entonces el primer argumento de
+    callback será un mensaje de error, y como segundo parametro
+    no tendrá nada, pues no se encontró el empleado*/
     callback(`El empleado con ID ${id} no existe en la base de datos`);
   } else {
-    // No hay error (null como primer parametro), como segundo
-    // parametro mandamos el empleado encontrado, este lo
-    // obtendremos despues cuando llamemos a la funcion
-    // getEmpleado, sigue leyendo..
+    /*No hay error (null como primer parametro), como segundo
+    parametro mandamos el empleado encontrado, este lo
+    obtendremos despues cuando llamemos a la funcion
+    getEmpleado, sigue leyendo...*/
     callback(null, empleadoDB);
   }
 };
@@ -54,9 +54,9 @@ let getSalario = (id, callback) => {
       `No se encontró un salario para el empleado ${empleadoDB.nombre.toUpperCase()}`
     );
   } else {
-    // parametro error null (no hay error),
-    // en el segundo parametro armamos un objeto que
-    // sera lo que obtendremos cuando llamemos la funcion getSalario
+    /*parametro error null (no hay error),
+    en el segundo parametro armamos un objeto que
+    sera lo que obtendremos cuando llamemos la funcion getSalario*/
     callback(null, {
       id,
       nombre: empleadoDB.nombre,
